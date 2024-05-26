@@ -14,7 +14,9 @@
       <div class="container">
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-list-el"><a href="">главная</a></li>
+            <li class="header__nav-list-el">
+              <a href="">главная</a>
+            </li>
             <li class="header__nav-list-el active">
               <a href="#">посмотреть лоты</a>
             </li>
@@ -37,33 +39,28 @@
     </header>
     <main class="content">
       <div class="container">
-        <section class="cover">
-          <div class="overlay"></div>
-          <h1 class="cover__title">
-            <span class="aligned-text"
-              >о<span class="letter-spacing-extended">но</span></span
-            >
-            <span class="aligned-text center"
-              >те<span class="letter-spacing-extended">бе</span></span
-            >
-            <span class="aligned-text right"
-              ><span class="letter-spacing-extended">н</span
-              ><span class="letter-spacing-extended">ад</span
-              ><span class="letter-spacing-last">о</span></span
-            >
-          </h1>
-          <div class="cover__description">
-            <div class="cover__description-text">
-              Аукцион вещей, в которые никто не верил
-            </div>
-            <button class="bet-button">Сделать ставку</button>
+        <section class="main-screen">
+          <div class="overlay">
           </div>
-        </section>
+          
+          <h1 class="main-screen__title">
+            <span class="main-screen-text">о<span class="main-screen-letters">но</span></span>
+            <span class="main-screen-text center">те<span class="main-screen-letters">бе</span></span>
+            <span class="main-screen-text right"><span class="main-screen-letters">н</span><span class="main-screen-letters">ад</span><span class="main-screen-letters-last">о</span></span>
+            
+        </h1>
+      
+          <div class="main-screen__description">
+           <div class="main-screen__description-text">Аукцион вещей, в которые никто не верил</div>
+          <button class="main-screen-button">Сделать ставку</button>
+        </div>
+         </section>
+    
         <article class="lots">
           <h2 class="lots_heading">лоты</h2>
           <ul class="lots-list">
             <li class="lots-list-item">
-              <div class="lots-overlay"></div>
+              <div class="overlay"></div>
               <div class="lots-content">
                 <div class="lots-header">
                   <a href="#">Фильм режиссёра, который бросил киношколу</a>
@@ -76,7 +73,7 @@
               </div>
             </li>
             <li class="lots-list-item">
-              <div class="lots-overlay"></div>
+              <div class="overlay"></div>
               <div class="lots-content">
                 <div class="lots-header">
                   <a href="#"
@@ -94,8 +91,9 @@
                 </div>
               </div>
             </li>
+            
             <li class="lots-list-item">
-              <div class="lots-overlay"></div>
+              <div class="overlay"></div>
               <div class="lots-content">
                 <div class="lots-header">
                   <a href="#"
@@ -114,22 +112,23 @@
           </ul>
           <a class="more" href="#0">посмотреть больше</a>
         </article>
-        <section class="about">
-          <div class="about_column">
-            <a class="about_logo">
-              <img class="about_logo-image"
+        <section class="info">
+          <div class="info_column">
+            <a class="info_logo"
+              ><img
+                class="info_logo-img"
                 src="./images/logo-column.svg"
-                alt="белый лого"/>
-              </a>
+                alt="белый лого"
+            /></a>
             <div class="">
-              <h2 class="about_title">Об аукционе</h2>
-              <p class="about_text">
+              <h2 class="info_title">Об аукционе</h2>
+              <p class="info_text">
                 Здесь вы не встретите очередное пафосное собрание невероятно
                 дорогого антиквариата. Наши лоты вообще не должны были попасть
                 ни на один аукцион. Потому что кому нужен дневник
                 девочки-подростка или картина, которую может нарисовать даже
                 ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-                <span class="about_text_second"
+                <span class="info_text_second"
                   >Слишком сложные или, наоборот, слишком простые. Опережающие
                   своё время. В пух и прах растерзанные критиками. Непринятые и
                   непонятые. Когда-то они казались просто неудачными. Но,
@@ -146,8 +145,7 @@
     </main>
     <footer class="footer">
       <address class="contacts">
-        <a href="tel:">+9 999 555 5555</a>
-         <a href="mailto:mail@example.com">info@sobaka.ge</a>
+        <a href="phone">+9 999 555 5555</a> <a href="email">info@sobaka.ge</a>
         <div class="addresse">наб. Принсенграхт 263-<br />265, Амстердам</div>
       </address>
       <nav class="footer_menu">

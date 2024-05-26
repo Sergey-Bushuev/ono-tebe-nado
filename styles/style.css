@@ -81,18 +81,17 @@ main.content {
   height: 100%;
   inset: 0;
   position: absolute;
-  z-index: -1;
 }
 
-.cover,
-.cover__title {
+.main-screen,
+.main-screen__title {
   display: flex;
   position: relative;
   z-index: 1;
   flex-direction: column;
 }
 
-.cover {
+.main-screen {
   background-image: url(../images/over.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -103,7 +102,7 @@ main.content {
   justify-content: space-between;
 }
 
-.cover__title {
+.main-screen__title {
   font-size: 100px;
   color: #fff;
   text-transform: uppercase;
@@ -111,46 +110,42 @@ main.content {
   justify-content: center;
 }
 
-.aligned-text {
+.main-screen-text {
   display: block;
   text-align: left;
   letter-spacing: 0.3em;
 }
 
-.aligned-text.center {
+.main-screen-text.center {
   text-align: center;
 }
 
-.aligned-text.right {
+.main-screen-text.right {
   text-align: right;
   letter-spacing: 0.2em;
 }
 
-.right .letter-spacing-extended:first-child {
+.right .main-screen-letters:first-child {
   letter-spacing: 0.6em;
 }
 
-.right .letter-spacing-extended:last-child {
+.right .main-screen-letters:last-child {
   letter-spacing: 0.3em;
 }
 
-.letter-spacing-last {
-  letter-spacing: 0;
-}
-
-.letter-spacing-extended {
+.main-screen-letters {
   letter-spacing: 0.6em;
 }
 
-.right .letter-spacing-extended {
+.right .main-screen-letters {
   letter-spacing: 0.3em;
 }
 
-.no-letter-spacing {
+.main-screen-letters-last {
   letter-spacing: 0;
 }
 
-.cover__description {
+.main-screen__description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -159,14 +154,14 @@ main.content {
   z-index: 1;
 }
 
-.bet-button,
-.cover__description-text {
+.main-screen-button,
+.main-screen__description-text {
   color: var(--white);
   text-transform: uppercase;
   font-size: 22px;
 }
 
-.cover__description-text {
+.main-screen__description-text {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -175,7 +170,7 @@ main.content {
   word-spacing: 18px;
 }
 
-.bet-button {
+.main-screen-button {
   width: 256px;
   height: 51px;
   border: 1px solid var(--white);
@@ -207,6 +202,7 @@ main.content {
   flex-direction: row;
   justify-content: space-between;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .lots-list-item {
@@ -274,13 +270,13 @@ main.content {
   font-size: 21px;
 }
 
-.about {
+.info {
   margin-top: 146px;
   margin-left: 24px;
   margin-right: 24px;
 }
 
-.about_column {
+.info_column {
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-items: center;
@@ -288,7 +284,7 @@ main.content {
   min-height: 595px;
 }
 
-.about_logo {
+.info_logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,12 +295,12 @@ main.content {
   border-radius: 100%;
 }
 
-.about_logo-image {
+.info_logo-img {
   height: 100%;
   width: 100%;
 }
 
-.about_title {
+.info_title {
   display: block;
   align-items: flex-end;
   font-size: 40px;
@@ -314,7 +310,7 @@ main.content {
   padding-left: 8px;
 }
 
-.about_text {
+.info_text {
   padding-top: 100px;
   width: 98%;
   height: 100%;
@@ -325,7 +321,7 @@ main.content {
   line-height: 24px;
 }
 
-.about_text_second {
+.info_text_second {
   display: block;
   padding-top: 24px;
 }
