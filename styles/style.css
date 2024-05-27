@@ -264,7 +264,7 @@ span.main-screen-text:first-child {
 .more {
     display: block;
     padding: 30px 102px 2px 40px;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .info {
@@ -316,11 +316,9 @@ span.main-screen-text:first-child {
     word-spacing: 0;
     padding-left: 8px;
     line-height: 24px;
-}
-
-.info_text_second {
-    display: block;
-    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap:24px
 }
 
 .footer {
